@@ -1,5 +1,4 @@
-// Copyright (C) 2018 Dongsheng Yang <ydsf16@buaa.edu.cn>
-//(Biologically Inspired Mobile Robot Laboratory, Robotics Institute, Beihang University)
+//(Distributed Mobile Computing Lab, Beihang University)
 /*
         2021.12.08 
         里程计叠加点云生成3D点云地图.接收里程计和点云，时间同步后从局部坐标系装换到全局坐标系.

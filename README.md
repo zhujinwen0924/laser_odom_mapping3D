@@ -1,10 +1,11 @@
-laser_odom_mapping
+# Laserscan Odom mapping
+## A simple implementation of Laserscan Odom mapping
 
-#A simple implementation of laser_odom_mapping
+input topic: state_estimation   pointcloud
 
-input topic: state_estimation pointcloud output_topic: 3Dmap_output
+output_topic: 3Dmap_output
 
-Demo
+## Demo
 
 step1. Download the repository to your ROS workspace: catkin_ws/src
 
@@ -12,7 +13,7 @@ step2. Make：catkin_make
 
 step3. Run: roslaunch mapping3D mapping3D.launch
 
-step4. 建图结束后 CTRL + C结束程序,自动保存地图到mapData目录下面.
+step4.  SCTL + C结束程序,自动保存地图到mapData目录下面.
 
 ![图片](https://user-images.githubusercontent.com/57209631/145226786-018401cd-8731-4877-a442-8ab9e5cf6898.png)
 

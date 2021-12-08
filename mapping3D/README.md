@@ -1,5 +1,5 @@
-# Occupancy Grid Mapping
-## A simple implementation of occupancy grid mapping.
+# laser_odom_mapping
+## A simple implementation of laser_odom_mapping
 
 input topic: state_estimation   pointcloud
 output_topic: 3Dmap_output

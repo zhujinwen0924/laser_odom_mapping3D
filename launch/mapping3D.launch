@@ -1,0 +1,23 @@
+<launch>
+
+    <param name="use_sim_time"  value="true"/>
+  <node pkg="mapping3D" type="mapping3D" name="mapping3D" output="screen" clear_params="true">
+                        <param name="save_folder_path"            value="$(find mapping3D)/mapData" />
+                        <param name="save_file_name"            value="BeihangGarage"/>
+                        <param name="downsample_voxel_size"            value="0.1" type="double"/>
+                        
+
+						<!-- <rosparam file="$(find occ_grid_mapping)/config/default.yaml" command="load" /> -->
+                        <!-- <remap from="/state_estimation" to="/odom"/> -->
+                        <!-- <remap from ="/sensor_scan" to="velodyne_points"/> -->
+  </node>
+  
+	<node pkg="rviz" type="rviz" name="rviz" output="screen" 
+      args="-d $(find mapping3D)/rviz/myconfig.rviz" required="true">
+    </node>
+
+    <!-- <node pkg="tf" type="static_transform_publisher" name="vehicleTransPublisher" args="0 0 0 0 0 0 /map /odom 1000"/> -->
+
+    <node pkg="rosbag"  type="play"  name="garage_bag" args="--clock  $(find mapping3D)/mapData/garage.bag"/>
+
+</launch>

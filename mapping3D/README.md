@@ -10,6 +10,6 @@ step1. Download the repository to your ROS workspace: catkin_ws/src
 
 step2. Make：catkin_make
 
-step3. Run: roslaunch occ_grid_mapping mapping.launch
+step3. Run:  roslaunch mapping3D mapping3D.launch
 
 step4.  SCTL + C结束程序,自动保存地图到mapData目录下面.

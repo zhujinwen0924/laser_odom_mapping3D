@@ -15,3 +15,6 @@ step3. Run: roslaunch occ_grid_mapping mapping.launch
 step4.  SCTL + C结束程序,自动保存地图到mapData目录下面.
 
 ![图片](https://user-images.githubusercontent.com/57209631/145226786-018401cd-8731-4877-a442-8ab9e5cf6898.png)
+
+rqt_graph:
+![图片](https://user-images.githubusercontent.com/57209631/145227064-51b30b34-22c1-4698-8b16-8bc0c11dae28.png)

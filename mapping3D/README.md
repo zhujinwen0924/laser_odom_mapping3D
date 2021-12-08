@@ -12,4 +12,4 @@ step2. Make：catkin_make
 
 step3. Run:  roslaunch mapping3D mapping3D.launch
 
-step4. 建图结束后 SCTL + C结束程序,自动保存地图到mapData目录下面.
+step4. 建图结束后 CTRL + C结束程序,自动保存地图到mapData目录下面.
